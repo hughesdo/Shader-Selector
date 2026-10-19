@@ -1,5 +1,9 @@
 # Shader Selector
 
+You can try it right now in your browser at the
+[live demo](https://hughesdo.github.io/Shader-Selector/). Click anywhere on the
+page to start the demo audio for the audio-reactive shaders.
+
 Shader Selector is the shader picker I use inside the other applications I'm
 building: one place to browse, preview, rate and pull in a growing library of
 GLSL shaders and transitions. It's public because I'd like it to be a starting
