@@ -1,5 +1,19 @@
 # Shader Selector
 
+Shader Selector is the shader picker I use inside the other applications I'm
+building: one place to browse, preview, rate and pull in a growing library of
+GLSL shaders and transitions. It's public because I'd like it to be a starting
+point for others. Fork it, point the importer at the Shadertoy work you love,
+add your own pieces, and grow a personal collection over time, with an app for
+selecting those assets already built. If it nudges you to write your own
+shaders and share them back on Shadertoy, even better.
+
+The shaders in `public/library` belong to their original authors. Each
+`shader.json` credits the creator and links back to the original on Shadertoy
+wherever that was possible. If you see a missing or incorrect credit, or you'd
+like your work handled differently, reach out to me on X at
+[@oneHung](https://x.com/oneHung) and I'll fix it.
+
 ## What changed in v2
 
 - **Type filter** next to search: All, Audio Reactive, Generative, 3D Scene, CubeMaps, Effects, Transitions. Only categories that actually have shaders are offered.
