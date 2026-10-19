@@ -11,9 +11,25 @@
 
 ### Importing a Shadertoy shader
 
+The importer reads your Shadertoy API key from the `SHADERTOY_KEY` environment
+variable (or `--key`). Get a key at https://www.shadertoy.com/myapps. Keep it out
+of the repo: set it in your environment rather than in any file.
+
+On Windows, save it permanently for your user (open a new terminal afterwards):
+
+```
+setx SHADERTOY_KEY "yourkey"
+```
+
+Or set it for the current terminal only:
+
+```
+set SHADERTOY_KEY=yourkey              (cmd)
+$env:SHADERTOY_KEY = "yourkey"         (PowerShell)
+```
+
 ```
 pip install curl_cffi pillow
-set SHADERTOY_KEY=yourkey
 
 python tools/import_shadertoy.py N3cXRB
 python tools/import_shadertoy.py N3cXRB --category 3d-scene --stars 4
