@@ -1,0 +1,40 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "gl-transition",
+ "kind": "transition",
+ "category": "transition",
+ "params": {
+  "adjust": 0.5,
+  "reverse": false
+ },
+ "info": {
+  "id": "trippyswirl4",
+  "name": "Trippy Swirl4",
+  "username": "huynx",
+  "description": "gl-transition. Status: Fully Working.",
+  "tags": [
+   "transition"
+  ],
+  "license": "MIT",
+  "source": {
+   "kind": "gl-transitions",
+   "file": "Transitions/TrippySwirl4.glsl"
+  },
+  "stars": 5,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "transition.glsl"
+  }
+ ]
+}

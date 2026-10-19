@@ -1,0 +1,87 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "f3dSzf",
+  "name": "Gilded Mirror Forest",
+  "username": "OneHung",
+  "description": "Golden filigree with a lightning heart, a blue-gold mirror forest and a neon dark mirror, from my fractal clips. Kicks hop the colours and switch scenes, energy drives the fly-through. Toggles in Common: AUDIO_REACTIVE, SCENE, PARALLAX_MODE.",
+  "tags": [
+   "fractal",
+   "reactive",
+   "music",
+   "parallax",
+   "audio",
+   "visualizer",
+   "mirror",
+   "filigree"
+  ],
+  "date": 1792237250,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/f3dSzf"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "common",
+   "name": "Common",
+   "inputs": [],
+   "codeFile": "common.glsl"
+  },
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    },
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

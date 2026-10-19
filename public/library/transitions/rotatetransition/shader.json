@@ -1,0 +1,37 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "gl-transition",
+ "kind": "transition",
+ "category": "transition",
+ "params": {},
+ "info": {
+  "id": "rotatetransition",
+  "name": "Rotate Transition",
+  "username": "haiyoucuv",
+  "description": "gl-transition. Status: Fully Working.",
+  "tags": [
+   "transition"
+  ],
+  "license": "MIT",
+  "source": {
+   "kind": "gl-transitions",
+   "file": "Transitions/RotateTransition.glsl"
+  },
+  "stars": 5,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "transition.glsl"
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "scKGWh",
+  "name": "Ink Nebula",
+  "username": "OneHung",
+  "description": "An alcohol-ink pour, poured into deep space and flown through. Painted from a fluid-acrylic reference.",
+  "tags": [
+   "fbm",
+   "fluid",
+   "audio",
+   "space",
+   "nebula",
+   "starfield",
+   "ink",
+   "planets",
+   "audioreactive",
+   "domainwarp"
+  ],
+  "date": 1785286075,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/scKGWh"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    },
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

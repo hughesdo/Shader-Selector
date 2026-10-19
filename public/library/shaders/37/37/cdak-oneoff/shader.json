@@ -1,0 +1,73 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "cdak-oneoff",
+    "name": "cdak_oneoff",
+    "username": "Quite & Orange",
+    "description": "Verbatim GLSL port of cdak 4K intro by Quite & Orange (1st at Chaos Constructions 2010). Two-pass buffer system: Buffer A raymarches the architectural tunnel and fractal lattice geometry; Image pass runs the original Sobel edge detection producing the characteristic bluish-purple edge lines, plus volumetric glow and tone curve grading. Stable version \u2014 no audio wobble on camera.",
+    "tags": [
+      "audio-reactive",
+      "multipass"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "cdak_oneoff.glsl",
+      "url": "http://www.pouet.net/prod.php?which=55758"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "buffer",
+      "name": "Buffer A",
+      "id": "A",
+      "codeFile": "bufferA.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "buffer",
+          "ref": "A",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "buffer",
+          "ref": "A",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

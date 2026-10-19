@@ -1,0 +1,56 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "3XSczm",
+    "name": "Audio Reactive Magical Orb 4",
+    "username": "OneHung",
+    "description": "Audio Reactive Magical Orb 4 - With edge rainbow waves. Created by OneHung. Bass-triggered expanding rainbow rings on cubemap edges. Persistent edge glow and surface-responsive spotlight. Shadertoy ID: 3XSczm",
+    "tags": [
+      "audio-reactive"
+    ],
+    "date": 1760656789,
+    "source": {
+      "kind": "shadertoy",
+      "url": "https://www.shadertoy.com/view/3XSczm",
+      "file": "3XSczm_AudioReactiveMagicalOrb4.glsl"
+    },
+    "stars": 5,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "cubemap",
+          "ref": "de678aba1ba90fcd59ba404f12813ca7a95897cf7ba26084f7be1333be034211",
+          "src": "assets/cube/de/de678aba1ba90fcd59ba404f12813ca7a95897cf7ba26084f7be1333be034211",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": true
+          }
+        }
+      ]
+    }
+  ]
+}

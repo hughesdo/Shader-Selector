@@ -1,0 +1,45 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "tfVcWG",
+    "name": "Jiggy Geometry",
+    "username": "OneHung",
+    "description": "Jiggy Geometry - Infinite descent through audio reactive falling portals. Created by OneHung. Enhanced with audio-reactive turbulence and parallax effects. Various frame shapes with unique colors. Shadertoy ID: tfVcWG",
+    "tags": [
+      "audio-reactive"
+    ],
+    "date": 1765138577,
+    "source": {
+      "kind": "shadertoy",
+      "url": "https://www.shadertoy.com/view/tfVcWG",
+      "file": "tfVcWG_JiggyGeometry.glsl"
+    },
+    "stars": 5,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

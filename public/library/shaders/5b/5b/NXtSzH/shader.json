@@ -1,0 +1,73 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "NXtSzH",
+  "name": "BIREFRINGENT BLOOM",
+  "username": "OneHung",
+  "description": "BIREFRINGENT BLOOM",
+  "tags": [
+   "voronoi",
+   "fbm",
+   "metaball",
+   "warped"
+  ],
+  "date": 1791340077,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/NXtSzH"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "common",
+   "name": "Common",
+   "inputs": [],
+   "codeFile": "common.glsl"
+  },
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

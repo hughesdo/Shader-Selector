@@ -1,0 +1,81 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "xor-waveform",
+    "name": "Xor-Wave Form",
+    "username": "XorDev",
+    "description": "Scrolling Waveform Visualizer by @XorDev - Raymarched 3D waveform with scrolling trails effect. Uses Buffer A for temporal feedback to create flowing waveform history. Features reflections and depth-based coloring. Test shader for audio waveform data visualization.",
+    "tags": [
+      "audio-reactive",
+      "multipass"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "Xor-WaveForm.glsl"
+    },
+    "stars": 0,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "buffer",
+      "name": "Buffer A",
+      "id": "A",
+      "codeFile": "bufferA.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "buffer",
+          "ref": "A",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "buffer",
+          "ref": "A",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

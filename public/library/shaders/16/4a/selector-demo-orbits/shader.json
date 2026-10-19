@@ -1,0 +1,33 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "shadertoy",
+  "info": {
+    "id": "selector-demo-orbits",
+    "name": "Selector Demo Orbits",
+    "username": "shader-selector",
+    "description": "Reference shader for the shaderlib/1 format: Shadertoy dialect with a Common tab, a self-feeding Buffer A and music input. Orbiting lights leave spiral trails; bass widens the orbits, highs twist the feedback.",
+    "tags": ["audio-reactive", "multipass", "reference"],
+    "license": "CC0",
+    "source": { "kind": "original" },
+    "stars": 4,
+    "audio": { "reactive": true },
+    "preview": { "thumb": "thumb.webp", "still": "still.webp" }
+  },
+  "renderpass": [
+    { "type": "common", "name": "Common", "codeFile": "common.glsl", "inputs": [] },
+    {
+      "type": "buffer", "name": "Buffer A", "id": "A", "codeFile": "bufferA.glsl",
+      "inputs": [
+        { "channel": 0, "type": "buffer", "ref": "A", "sampler": { "filter": "linear", "wrap": "clamp", "vflip": false } },
+        { "channel": 1, "type": "music", "sampler": { "filter": "linear", "wrap": "clamp", "vflip": false } }
+      ]
+    },
+    {
+      "type": "image", "name": "Image", "codeFile": "image.glsl",
+      "inputs": [
+        { "channel": 0, "type": "buffer", "ref": "A", "sampler": { "filter": "linear", "wrap": "clamp", "vflip": false } },
+        { "channel": 1, "type": "music", "sampler": { "filter": "linear", "wrap": "clamp", "vflip": false } }
+      ]
+    }
+  ]
+}

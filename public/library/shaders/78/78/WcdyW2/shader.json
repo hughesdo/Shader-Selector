@@ -1,0 +1,48 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "WcdyW2",
+  "name": "Gyroid Orb Journey v4 - Plasma",
+  "username": "OneHung",
+  "description": "Thanks BigWings and Diatribes these are mashups inspired from you two. Also, big thanks to PAEz. He keeps me inspired to keep making these, and he usually swoops in and polishes them up. I mostly just vibe these out late at night before bed, hee hee.\n",
+  "tags": [
+   "orb",
+   "gyroid",
+   "audioreactive"
+  ],
+  "date": 1764128990,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/WcdyW2"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

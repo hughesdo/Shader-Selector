@@ -1,0 +1,46 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "WcyfRD",
+  "name": "Bioluminescent Glass Ribbons",
+  "username": "OneHung",
+  "description": "Bioluminescent Glass Ribbons",
+  "tags": [
+   "audioreactive"
+  ],
+  "date": 1770079545,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/WcyfRD"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

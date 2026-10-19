@@ -1,0 +1,109 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "NX3SR4",
+  "name": "Neural Bloom Audio React",
+  "username": "OneHung",
+  "description": "A PAEz and OneHung Colab\n\nInk Blot - Neural Bloom\nInspired by edcreativecoder's \"Closer\" ink-thread piece.\nhttps://x.com/edcreativecoder/status/1971212858768883726?s=20",
+  "tags": [
+   "bloom",
+   "neural"
+  ],
+  "date": 1791382040,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/NX3SR4"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "common",
+   "name": "Common",
+   "inputs": [],
+   "codeFile": "common.glsl"
+  },
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    },
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "buffer",
+   "name": "Buffer B",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "id": "B",
+   "codeFile": "bufferB.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    },
+    {
+     "channel": 2,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "B"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

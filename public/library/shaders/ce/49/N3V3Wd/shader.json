@@ -1,0 +1,37 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "generative",
+ "info": {
+  "id": "N3V3Wd",
+  "name": "Voronoi pillows",
+  "username": "OneHung",
+  "description": "Voronoi pillows",
+  "tags": [
+   "voronoi",
+   "prismatic"
+  ],
+  "date": 1791162030,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/N3V3Wd"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

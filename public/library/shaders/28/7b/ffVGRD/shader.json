@@ -1,0 +1,46 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "ffVGRD",
+  "name": "Prism Tunnel",
+  "username": "OneHung",
+  "description": "Technique mash-up (diatribes): curving-centerline fly-through + square tube\n (Deco Tunnel / Blue Red Shiny), squiggle light-tubes as glow (Red Blue Fly\n Through), refract-and-march-again glass (Refract Fractal); glass cube shading\n after \"glass cube",
+  "tags": [
+   "prism"
+  ],
+  "date": 1792271234,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/ffVGRD"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

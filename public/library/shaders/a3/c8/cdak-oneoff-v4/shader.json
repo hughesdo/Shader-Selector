@@ -1,0 +1,82 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "cdak-oneoff-v4",
+    "name": "cdak_oneoff_v4",
+    "username": "Quite & Orange",
+    "description": "cdak tunnel port V4 \u00e2\u20ac\u201d introduces audio reactivity for heavy drum beat music alongside the stable camera from V3. Bass punches up the thickness and intensity of the blue/purple edge detection lines, shifts their colors based on mids/highs, and adds a pulsing warm glow.",
+    "tags": [
+      "audio-reactive",
+      "multipass"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "cdak_oneoff_v4.glsl",
+      "url": "http://www.pouet.net/prod.php?which=55758"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "buffer",
+      "name": "Buffer A",
+      "id": "A",
+      "codeFile": "bufferA.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "buffer",
+          "ref": "A",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "buffer",
+          "ref": "A",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

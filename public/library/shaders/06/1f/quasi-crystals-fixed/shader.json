@@ -1,0 +1,31 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "quasi-crystals-fixed",
+    "name": "Quasi-crystals_Fixed",
+    "username": "OneHung",
+    "description": "Animated quasi-crystal with HSV coloring. This shader is static with no audio reactivity, showing plane wave interference in log-polar space.",
+    "tags": [],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "Quasi-crystals_Fixed.glsl"
+    },
+    "stars": 5,
+    "audio": {
+      "reactive": false
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": []
+    }
+  ]
+}

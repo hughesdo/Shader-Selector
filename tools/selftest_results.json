@@ -1,0 +1,610 @@
+[
+ {
+  "id": "33ScR1",
+  "name": "Audio Reactive Magical Orb 2",
+  "ok": true,
+  "ms": 70,
+  "glError": 0,
+  "brightness": 109
+ },
+ {
+  "id": "wXjyRh",
+  "name": "Audio Reactive Magical Orb 3",
+  "ok": true,
+  "ms": 46,
+  "glError": 0,
+  "brightness": 134
+ },
+ {
+  "id": "3XSczm",
+  "name": "Audio Reactive Magical Orb 4",
+  "ok": true,
+  "ms": 28,
+  "glError": 0,
+  "brightness": 155
+ },
+ {
+  "id": "audio-reactive-magical-orb-2",
+  "name": "Audio Reactive Magical Orb-2",
+  "ok": true,
+  "ms": 23,
+  "glError": 0,
+  "brightness": 117
+ },
+ {
+  "id": "colorphase",
+  "name": "Colorphase",
+  "ok": true,
+  "ms": 66,
+  "glError": 0,
+  "brightness": 45
+ },
+ {
+  "id": "WcdyR2",
+  "name": "Crystal Orb Cathedral - diatribe",
+  "ok": true,
+  "ms": 9,
+  "glError": 0,
+  "brightness": 78
+ },
+ {
+  "id": "displacement",
+  "name": "Displacement",
+  "ok": true,
+  "ms": 15,
+  "glError": 0,
+  "brightness": 58
+ },
+ {
+  "id": "dreamy",
+  "name": "Dreamy",
+  "ok": true,
+  "ms": 10,
+  "glError": 0,
+  "brightness": 64
+ },
+ {
+  "id": "edgetransition",
+  "name": "Edge Transition",
+  "ok": true,
+  "ms": 21,
+  "glError": 0,
+  "brightness": 58
+ },
+ {
+  "id": "filmburn",
+  "name": "Film Burn",
+  "ok": true,
+  "ms": 10,
+  "glError": 0,
+  "brightness": 51
+ },
+ {
+  "id": "flyeye",
+  "name": "Flyeye",
+  "ok": true,
+  "ms": 5,
+  "glError": 0,
+  "brightness": 45
+ },
+ {
+  "id": "WcdyW2",
+  "name": "Gyroid Orb Journey v4 - Plasma",
+  "ok": true,
+  "ms": 23,
+  "glError": 0,
+  "brightness": 90
+ },
+ {
+  "id": "tfVcWG",
+  "name": "Jiggy Geometry",
+  "ok": true,
+  "ms": 7,
+  "glError": 0,
+  "brightness": 68
+ },
+ {
+  "id": "luma",
+  "name": "Luma",
+  "ok": true,
+  "ms": 14,
+  "glError": 0,
+  "brightness": 46
+ },
+ {
+  "id": "moltenheart",
+  "name": "Molten Heart",
+  "ok": true,
+  "ms": 13,
+  "glError": 0,
+  "brightness": 91
+ },
+ {
+  "id": "morph",
+  "name": "Morph",
+  "ok": true,
+  "ms": 11,
+  "glError": 0,
+  "brightness": 41
+ },
+ {
+  "id": "musiccave",
+  "name": "Music Cave",
+  "ok": true,
+  "ms": 15,
+  "glError": 0,
+  "brightness": 91
+ },
+ {
+  "id": "dd-new-sig2",
+  "name": "New Sig2",
+  "ok": true,
+  "ms": 45,
+  "glError": 0,
+  "brightness": 87
+ },
+ {
+  "id": "powerkaleido",
+  "name": "Power Kaleido",
+  "ok": true,
+  "ms": 8,
+  "glError": 0,
+  "brightness": 53
+ },
+ {
+  "id": "quasi-crystals-fixed",
+  "name": "Quasi-crystals_Fixed",
+  "ok": true,
+  "ms": 4,
+  "glError": 0,
+  "brightness": 153
+ },
+ {
+  "id": "reflected-structure-by-musk-for-tdf-2021-optimized",
+  "name": "reflected structure by musk for TDF 2021_Optimized",
+  "ok": true,
+  "ms": 15,
+  "glError": 0,
+  "brightness": 80
+ },
+ {
+  "id": "ripple",
+  "name": "Ripple",
+  "ok": true,
+  "ms": 3,
+  "glError": 0,
+  "brightness": 55
+ },
+ {
+  "id": "rotate-scale-fade",
+  "name": "Rotate Scale Fade",
+  "ok": true,
+  "ms": 9,
+  "glError": 0,
+  "brightness": 44
+ },
+ {
+  "id": "rotatetransition",
+  "name": "Rotate Transition",
+  "ok": true,
+  "ms": 15,
+  "glError": 0,
+  "brightness": 58
+ },
+ {
+  "id": "wfyczt",
+  "name": "Space Cave",
+  "ok": true,
+  "ms": 12,
+  "glError": 0,
+  "brightness": 158
+ },
+ {
+  "id": "tangentmotionblur",
+  "name": "Tangent Motion Blur",
+  "ok": true,
+  "ms": 16,
+  "glError": 0,
+  "brightness": 64
+ },
+ {
+  "id": "tetramenger-ii-audio-reactive-arthurtent",
+  "name": "Tetra Menger II - audio reactive  Arthur Tent",
+  "ok": true,
+  "ms": 5,
+  "glError": 0,
+  "brightness": 52
+ },
+ {
+  "id": "the-four-trumpets-2",
+  "name": "The Four Trumpets 2",
+  "ok": true,
+  "ms": 12,
+  "glError": 0,
+  "brightness": 27
+ },
+ {
+  "id": "trippyswirl4",
+  "name": "Trippy Swirl4",
+  "ok": true,
+  "ms": 14,
+  "glError": 0,
+  "brightness": 58
+ },
+ {
+  "id": "waterdrop",
+  "name": "Water Drop",
+  "ok": true,
+  "ms": 11,
+  "glError": 0,
+  "brightness": 66
+ },
+ {
+  "id": "audio-planet",
+  "name": "Audio Planet",
+  "ok": true,
+  "ms": 14,
+  "glError": 0,
+  "brightness": 0
+ },
+ {
+  "id": "base-vortex",
+  "name": "Base Vortex",
+  "ok": true,
+  "ms": 10,
+  "glError": 0,
+  "brightness": 64
+ },
+ {
+  "id": "candy-star-reactive-zoom-bloom",
+  "name": "Candy Star Reactive Zoom Bloom",
+  "ok": true,
+  "ms": 19,
+  "glError": 0,
+  "brightness": 118
+ },
+ {
+  "id": "cdak-oneoff",
+  "name": "cdak_oneoff",
+  "ok": true,
+  "ms": 40,
+  "glError": 0,
+  "brightness": 16
+ },
+ {
+  "id": "cdak-oneoff-v2",
+  "name": "cdak_oneoff_v2",
+  "ok": true,
+  "ms": 16,
+  "glError": 0,
+  "brightness": 76
+ },
+ {
+  "id": "cdak-oneoff-v4",
+  "name": "cdak_oneoff_v4",
+  "ok": true,
+  "ms": 27,
+  "glError": 0,
+  "brightness": 15
+ },
+ {
+  "id": "colorful-columns",
+  "name": "Colorful Columns",
+  "ok": true,
+  "ms": 27,
+  "glError": 0,
+  "brightness": 126
+ },
+ {
+  "id": "colorful-columns-v2",
+  "name": "Colorful Columns_V2",
+  "ok": true,
+  "ms": 28,
+  "glError": 0,
+  "brightness": 112
+ },
+ {
+  "id": "cosmic-energy-streams1",
+  "name": "Cosmic Energy Streams1",
+  "ok": true,
+  "ms": 24,
+  "glError": 0,
+  "brightness": 117
+ },
+ {
+  "id": "edge-plasma",
+  "name": "Edge Plasma",
+  "ok": true,
+  "ms": 19,
+  "glError": 0,
+  "brightness": 76
+ },
+ {
+  "id": "evoke-2019-shader-showdown-fixed",
+  "name": "EVOKE 2019 Shader Showdown_Fixed",
+  "ok": true,
+  "ms": 22,
+  "glError": 0,
+  "brightness": 127
+ },
+ {
+  "id": "flowing-mathematical-patterns2",
+  "name": "Flowing Mathematical Patterns2",
+  "ok": true,
+  "ms": 14,
+  "glError": 0,
+  "brightness": 142
+ },
+ {
+  "id": "forbiddenbeats",
+  "name": "Forbidden Beats",
+  "ok": true,
+  "ms": 7,
+  "glError": 0,
+  "brightness": 1
+ },
+ {
+  "id": "fragcord-ggc25z3w",
+  "name": "fragcord-ggc25z3w",
+  "ok": true,
+  "ms": 22,
+  "glError": 0,
+  "brightness": 53
+ },
+ {
+  "id": "fragmentcompofix-skycolorspinner-300es-fixed",
+  "name": "fragmentcompofix_skycolorspinner_300es_Fixed",
+  "ok": true,
+  "ms": 31,
+  "glError": 0,
+  "brightness": 204
+ },
+ {
+  "id": "fusion-reactor-oldeclipse",
+  "name": "Fusion Reactor Old Eclipse",
+  "ok": true,
+  "ms": 9,
+  "glError": 0,
+  "brightness": 70
+ },
+ {
+  "id": "futureshock-seek-and-destroy-diatribes",
+  "name": "Futureshock Seek and Destroy Diatribes",
+  "ok": true,
+  "ms": 20,
+  "glError": 0,
+  "brightness": 116
+ },
+ {
+  "id": "gemmarium",
+  "name": "Gemmarium",
+  "ok": true,
+  "ms": 8,
+  "glError": 0,
+  "brightness": 14
+ },
+ {
+  "id": "infinite-drift-stars-ar",
+  "name": "infinite_drift_stars_ar",
+  "ok": true,
+  "ms": 20,
+  "glError": 0,
+  "brightness": 0
+ },
+ {
+  "id": "infinite-drift-stars-v2-ar",
+  "name": "infinite_drift_stars_v2_ar",
+  "ok": true,
+  "ms": 19,
+  "glError": 0,
+  "brightness": 2
+ },
+ {
+  "id": "iridescent-breathing-orbs",
+  "name": "Iridescent Breathing Orbs",
+  "ok": true,
+  "ms": 22,
+  "glError": 0,
+  "brightness": 89
+ },
+ {
+  "id": "shader-jam-cube-tunnel",
+  "name": "Jam_Cube_Tunnel",
+  "ok": true,
+  "ms": 20,
+  "glError": 0,
+  "brightness": 70
+ },
+ {
+  "id": "a8-kimi-test-2",
+  "name": "Kimi test 2",
+  "ok": true,
+  "ms": 23,
+  "glError": 0,
+  "brightness": 220
+ },
+ {
+  "id": "00-kishimisu-bass-reactive-remix",
+  "name": "kishimisu Bass-reactive remix",
+  "ok": true,
+  "ms": 10,
+  "glError": 0,
+  "brightness": 163
+ },
+ {
+  "id": "kishimisu-dtj3zw",
+  "name": "kishimisu-Dtj3z W",
+  "ok": true,
+  "ms": 15,
+  "glError": 0,
+  "brightness": 8
+ },
+ {
+  "id": "livearchive-number-4",
+  "name": "Live Archive_number_4",
+  "ok": true,
+  "ms": 15,
+  "glError": 0,
+  "brightness": 100
+ },
+ {
+  "id": "lost-in-the-infinite-oldeclipse",
+  "name": "Lost in the Infinite Old Eclipse",
+  "ok": true,
+  "ms": 13,
+  "glError": 0,
+  "brightness": 120
+ },
+ {
+  "id": "luminous-nebulae",
+  "name": "Luminous Nebulae",
+  "ok": true,
+  "ms": 19,
+  "glError": 0,
+  "brightness": 8
+ },
+ {
+  "id": "aa-milkdrop1",
+  "name": "Milk Drop1",
+  "ok": true,
+  "ms": 31,
+  "glError": 0,
+  "brightness": 28
+ },
+ {
+  "id": "paez-plasma-orb",
+  "name": "Paez_Plasma Orb",
+  "ok": true,
+  "ms": 10,
+  "glError": 0,
+  "brightness": 38
+ },
+ {
+  "id": "particle-nebula-ar",
+  "name": "particle_nebula_ar",
+  "ok": true,
+  "ms": 17,
+  "glError": 0,
+  "brightness": 245
+ },
+ {
+  "id": "perspex-web-lattice",
+  "name": "Perspex Web Lattice",
+  "ok": true,
+  "ms": 38,
+  "glError": 0,
+  "brightness": 44
+ },
+ {
+  "id": "petal-drift",
+  "name": "Petal Drift",
+  "ok": true,
+  "ms": 21,
+  "glError": 0,
+  "brightness": 39
+ },
+ {
+  "id": "quasi-crystals2-fixed",
+  "name": "Quasi Crystals2_Fixed",
+  "ok": true,
+  "ms": 13,
+  "glError": 0,
+  "brightness": 73
+ },
+ {
+  "id": "rainbow-gyroid-orb",
+  "name": "Rainbow Gyroid Orb",
+  "ok": true,
+  "ms": 19,
+  "glError": 0,
+  "brightness": 67
+ },
+ {
+  "id": "saw-wave-plasma-ar",
+  "name": "saw_wave_plasma_ar",
+  "ok": true,
+  "ms": 29,
+  "glError": 0,
+  "brightness": 4
+ },
+ {
+  "id": "selector-demo-orbits",
+  "name": "Selector Demo Orbits",
+  "ok": true,
+  "ms": 23,
+  "glError": 0,
+  "brightness": 8
+ },
+ {
+  "id": "sessions-shaderjam-2023",
+  "name": "SESSIONS_shaderjam_2023",
+  "ok": true,
+  "ms": 5,
+  "glError": 0,
+  "brightness": 129
+ },
+ {
+  "id": "plasma-spectrograph-ar",
+  "name": "spectrograph_ar",
+  "ok": true,
+  "ms": 25,
+  "glError": 0,
+  "brightness": 0
+ },
+ {
+  "id": "where-is-her-mind-plasma",
+  "name": "Where Is Her Mind Plasma",
+  "ok": true,
+  "ms": 13,
+  "glError": 0,
+  "brightness": 5
+ },
+ {
+  "id": "shader-lesson-8-cube-maps",
+  "name": "Shader Lesson 8 - cube maps",
+  "ok": true,
+  "ms": 41,
+  "glError": 0,
+  "brightness": 78
+ },
+ {
+  "id": "sig15-entrylevel",
+  "name": "SIG15 Entry Level",
+  "ok": true,
+  "ms": 54,
+  "glError": 0,
+  "brightness": 154
+ },
+ {
+  "id": "attemptatvdjeffects",
+  "name": "Attempt at VDJ effects",
+  "ok": true,
+  "ms": 58,
+  "glError": 0,
+  "brightness": 77
+ },
+ {
+  "id": "fontdemo",
+  "name": "Font demo",
+  "ok": true,
+  "ms": 81,
+  "glError": 0,
+  "brightness": 255
+ },
+ {
+  "id": "xor-waveform",
+  "name": "Xor-Wave Form",
+  "ok": true,
+  "ms": 4,
+  "glError": 0,
+  "brightness": 71
+ },
+ {
+  "id": "cubemusictransmitter",
+  "name": "\u266b Low Frequency Flow",
+  "ok": true,
+  "ms": 11,
+  "glError": 0,
+  "brightness": 167
+ }
+]

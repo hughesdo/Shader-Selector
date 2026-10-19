@@ -1,0 +1,40 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "gl-transition",
+ "kind": "transition",
+ "category": "transition",
+ "params": {
+  "amplitude": 30.0,
+  "speed": 30.0
+ },
+ "info": {
+  "id": "waterdrop",
+  "name": "Water Drop",
+  "username": "Pawe\u0142 P\u0142\u00f3ciennik",
+  "description": "gl-transition. Status: Fully Working.",
+  "tags": [
+   "transition"
+  ],
+  "license": "MIT",
+  "source": {
+   "kind": "gl-transitions",
+   "file": "Transitions/WaterDrop.glsl"
+  },
+  "stars": 5,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "transition.glsl"
+  }
+ ]
+}

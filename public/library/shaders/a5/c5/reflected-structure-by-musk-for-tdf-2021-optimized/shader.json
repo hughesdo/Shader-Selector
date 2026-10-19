@@ -1,0 +1,31 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "reflected-structure-by-musk-for-tdf-2021-optimized",
+    "name": "reflected structure by musk for TDF 2021_Optimized",
+    "username": "musk",
+    "description": "Generative reflected structure with wave patterns. Slowly drifting camera, cycling colors and reflections over raymarched geometry.",
+    "tags": [],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "reflected structure by musk for TDF 2021_Optimized.glsl"
+    },
+    "stars": 5,
+    "audio": {
+      "reactive": false
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": []
+    }
+  ]
+}

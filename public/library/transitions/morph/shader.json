@@ -1,0 +1,39 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "gl-transition",
+ "kind": "transition",
+ "category": "transition",
+ "params": {
+  "strength": 0.1
+ },
+ "info": {
+  "id": "morph",
+  "name": "Morph",
+  "username": "paniq",
+  "description": "gl-transition. Status: Fully Working.",
+  "tags": [
+   "transition"
+  ],
+  "license": "MIT",
+  "source": {
+   "kind": "gl-transitions",
+   "file": "Transitions/Morph.glsl"
+  },
+  "stars": 5,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "transition.glsl"
+  }
+ ]
+}

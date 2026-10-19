@@ -1,0 +1,41 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "gl-transition",
+ "kind": "transition",
+ "category": "transition",
+ "params": {
+  "size": 0.04,
+  "zoom": 50.0,
+  "colorSeparation": 0.3
+ },
+ "info": {
+  "id": "flyeye",
+  "name": "Flyeye",
+  "username": "gre",
+  "description": "gl-transition. Status: Fully Working.",
+  "tags": [
+   "transition"
+  ],
+  "license": "MIT",
+  "source": {
+   "kind": "gl-transitions",
+   "file": "Transitions/Flyeye.glsl"
+  },
+  "stars": 5,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "transition.glsl"
+  }
+ ]
+}

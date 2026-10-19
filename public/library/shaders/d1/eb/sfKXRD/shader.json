@@ -1,0 +1,74 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "generative",
+ "info": {
+  "id": "sfKXRD",
+  "name": "Pattern 015 - Fractal Flower",
+  "username": "PAEz",
+  "description": "I saw this...\nhttps://x.com/Yann_LeGall/status/2091569573300727907\n..and when i see something like that I put it in the ai ;P\nAfter a bunch of goes I got the start of this, lots of tweaks later...oh so pretty!\nBeatiful and interesting, the best kind ",
+  "tags": [
+   "ai"
+  ],
+  "date": 1787742271,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/sfKXRD"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    },
+    {
+     "channel": 1,
+     "type": "keyboard",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": true
+     }
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

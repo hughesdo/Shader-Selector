@@ -1,0 +1,45 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "WcdyR2",
+    "name": "Crystal Orb Cathedral - diatribe",
+    "username": "OneHung",
+    "description": "Crystal Orb Cathedral - Diatribes-style with audio-reactive orb colors. Created by OneHung. Cathedral structure with glowing orbs that pulse to audio. Shadertoy ID: WcdyR2",
+    "tags": [
+      "audio-reactive"
+    ],
+    "date": 1763833782,
+    "source": {
+      "kind": "shadertoy",
+      "url": "https://www.shadertoy.com/view/WcdyR2",
+      "file": "WcdyR2_CrystalOrbCathedral.glsl"
+    },
+    "stars": 5,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

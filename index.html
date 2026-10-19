@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shader Selector</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='8' width='9' height='16' rx='2' fill='%2333404a' transform='skewY(12)'/%3E%3Crect x='20' y='8' width='9' height='16' rx='2' fill='%2333404a' transform='skewY(-12) translate(0 7)'/%3E%3Crect x='10' y='6' width='12' height='20' rx='2' fill='%235ef2d6'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand"><span class="mark"></span>Shader<em>Selector</em></div>
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="search" type="search" placeholder="Search name, author, tag" autocomplete="off" spellcheck="false" />
+        <select id="category" title="Filter by type"></select>
+      </label>
+      <div class="audio">
+        <select id="track" title="Music the shaders react to"></select>
+        <button id="play" class="icon-btn" title="Play / pause (Space)" aria-label="Play or pause"></button>
+        <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8" title="Volume" />
+        <div class="meters" title="bass / mids / highs"><i id="m-bass"></i><i id="m-mid"></i><i id="m-high"></i></div>
+      </div>
+    </header>
+
+    <main>
+      <div id="stage" class="stage">
+        <div id="unlock" class="unlock" hidden>Click anywhere to start the music</div>
+      </div>
+
+      <section class="scrub">
+        <span id="counter" class="counter">0 / 0</span>
+        <input id="scrubber" type="range" min="0" max="0" value="0" title="Jump anywhere in the library" />
+        <label class="ctl" title="How long a card must sit still before its shader compiles">
+          Dwell <input id="dwell" type="range" min="0" max="3000" step="50" value="900" /> <output id="dwell-out">0.9s</output>
+        </label>
+        <label class="ctl" title="Live canvas resolution cap">
+          Quality
+          <select id="quality">
+            <option value="460800">Low</option>
+            <option value="921600" selected>Med</option>
+            <option value="2073600">High</option>
+          </select>
+        </label>
+        <label class="ctl check" title="Compile automatically after the dwell time"><input id="autoplay" type="checkbox" checked /> Auto live</label>
+      </section>
+
+      <section id="info" class="info"></section>
+    </main>
+
+    <footer id="footer"></footer>
+    <div class="keys">← → flip &nbsp;·&nbsp; hold to accelerate &nbsp;·&nbsp; PgUp/PgDn ±10 &nbsp;·&nbsp; Enter go live now &nbsp;·&nbsp; Space music</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

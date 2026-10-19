@@ -1,0 +1,43 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "base-vortex",
+    "name": "Base Vortex",
+    "username": "OneHung",
+    "description": "Audio-reactive tunnel vortex effect with rotating geometry. Bass frequencies control tunnel depth and rotation speed, creating dynamic visual flow synchronized to music.",
+    "tags": [
+      "audio-reactive"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "Base Vortex.glsl"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "shader-jam-cube-tunnel",
+    "name": "Jam_Cube_Tunnel",
+    "username": "gam0022",
+    "description": "Shader Jam - Cube Tunnel. Audio reactive fractal cube tunnel with FFT-driven geometry scaling and emission. Features volumetric rendering, dynamic camera movement, and beat-synced color palettes.",
+    "tags": [
+      "audio-reactive"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "Shader_Jam_Cube_Tunnel.glsl",
+      "url": "https://gist.github.com/gam0022/b09b6e4c89262d55a88632456f0ef535"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "fXcSzS",
+  "name": "LUMINOUS LOTUS GATES",
+  "username": "OneHung",
+  "description": "A fly-through of iridescent gates: lotus lattices, chrome eye-orbs,\nhalftone bead rings, rainbow zebra bands and crystal rims, inside\nreef / chrome / smoke tunnel walls, all converging on a violet core.",
+  "tags": [
+   "rings",
+   "lotus",
+   "lattices",
+   "eyeorbs"
+  ],
+  "date": 1791980427,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/fXcSzS"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "common",
+   "name": "Common",
+   "inputs": [],
+   "codeFile": "common.glsl"
+  },
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    },
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

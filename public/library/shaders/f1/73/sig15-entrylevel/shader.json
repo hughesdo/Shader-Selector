@@ -1,0 +1,66 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "sig15-entrylevel",
+    "name": "SIG15 Entry Level",
+    "username": "dila",
+    "description": "Raymarched tunnel with fractal geometry, 3D texture mapping, and environment reflections. Features procedural domain repetition and dynamic camera movement through infinite tunnel.",
+    "tags": [
+      "audio-reactive"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "SIG15 EntryLevel.glsl",
+      "url": "https://www.shadertoy.com/view/llXXzf"
+    },
+    "stars": 3,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "texture",
+          "ref": "1eae2aea7054b1aeaeb0d4f6f3bda7ec4f1c84ae24f1d08cd534fcbd0f96ec78",
+          "src": "assets/tex/1e/1eae2aea7054b1aeaeb0d4f6f3bda7ec4f1c84ae24f1d08cd534fcbd0f96ec78.jpg",
+          "sampler": {
+            "filter": "mipmap",
+            "wrap": "repeat",
+            "vflip": true
+          }
+        },
+        {
+          "channel": 2,
+          "type": "texture",
+          "ref": "d6cb1784b0fd52ead5a41f5edb18ca0d1caf38bfbec9ea628e1983e22269dae9",
+          "src": "assets/tex/d6/d6cb1784b0fd52ead5a41f5edb18ca0d1caf38bfbec9ea628e1983e22269dae9.png",
+          "sampler": {
+            "filter": "mipmap",
+            "wrap": "repeat",
+            "vflip": true
+          }
+        }
+      ]
+    }
+  ]
+}

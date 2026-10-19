@@ -1,0 +1,46 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "wXGXz1",
+  "name": "Xor Mashup 001",
+  "username": "PAEz",
+  "description": "Uses Xors code",
+  "tags": [
+   "reactive"
+  ],
+  "date": 1754222960,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/wXGXz1"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

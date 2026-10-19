@@ -1,0 +1,53 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "7cdSRM",
+  "name": "Infinite Sacred Corridor",
+  "username": "OneHung",
+  "description": "An endless flight through an ornate golden hall of mirrors: glowing sacred-geometry mandalas on the ceiling, stained-glass arches, and a reflective floor of neon light-strips receding to a bright vanishing point. Fully procedural, looping.",
+  "tags": [
+   "reflection",
+   "tunnel",
+   "endless",
+   "neon",
+   "sacredgeometry",
+   "corridor",
+   "mandala",
+   "ornate"
+  ],
+  "date": 1786594363,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/7cdSRM"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

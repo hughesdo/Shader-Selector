@@ -1,0 +1,31 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "quasi-crystals2-fixed",
+    "name": "Quasi Crystals2_Fixed",
+    "username": "OneHung",
+    "description": "Quasi-crystal patterns using log-polar coordinates. This shader is static with no audio reactivity, displaying animated geometric wave interference patterns.",
+    "tags": [],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "Quasi Crystals2_Fixed.glsl"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": false
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": []
+    }
+  ]
+}

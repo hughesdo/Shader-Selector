@@ -1,0 +1,56 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "attemptatvdjeffects",
+    "name": "Attempt at VDJ effects",
+    "username": "mrange (mod ArthurTent)",
+    "description": "Original author: mrange. Modified by ArthurTent for ShaderAmp project. URL: https://www.shadertoy.com/view/XctGzf. Attempt at VDJ effects. License: CC0",
+    "tags": [
+      "audio-reactive"
+    ],
+    "license": "CC0",
+    "source": {
+      "kind": "shadertoy",
+      "url": "https://www.shadertoy.com/view/XctGzf",
+      "file": "AttemptAtVDJEffects.glsl"
+    },
+    "stars": 0,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        },
+        {
+          "channel": 1,
+          "type": "texture",
+          "ref": "e994f1603746442dd134f70e42ed174a1861d603f37785e863648fa0b0f26da9",
+          "src": "assets/tex/e9/e994f1603746442dd134f70e42ed174a1861d603f37785e863648fa0b0f26da9.jpg",
+          "sampler": {
+            "filter": "mipmap",
+            "wrap": "repeat",
+            "vflip": true
+          }
+        }
+      ]
+    }
+  ]
+}

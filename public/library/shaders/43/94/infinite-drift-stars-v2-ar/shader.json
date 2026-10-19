@@ -1,0 +1,43 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "infinite-drift-stars-v2-ar",
+    "name": "infinite_drift_stars_v2_ar",
+    "username": "OneHung",
+    "description": "Updated version of Infinite Drift starfield. Smooth diagonal-scrolling multi-layer starfield with parallax depth, magenta\u2192purple\u2192blue\u2192cyan\u2192green palette. Select stars click into bright audio-reactive halos on transients while the rest twinkle gently independent of the music. Subtle nebula background wash and edge vignette.",
+    "tags": [
+      "audio-reactive"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "infinite_drift_stars_v2_ar.glsl"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

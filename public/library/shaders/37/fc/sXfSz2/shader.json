@@ -1,0 +1,36 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "generative",
+ "info": {
+  "id": "sXfSz2",
+  "name": "WORLD LOOM",
+  "username": "OneHung",
+  "description": "The loom, woven in world space: two perpendicular families\nof silk threads \u2014 warp running into the depth, weft running\nacross \u2014 actually interleave (over, under, over) in 3D.\n Light packets travel down the warp while iridescence is\n computed.",
+  "tags": [
+   "loom"
+  ],
+  "date": 1781462834,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/sXfSz2"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

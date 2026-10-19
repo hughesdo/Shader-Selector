@@ -1,0 +1,48 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "N3tSzH",
+  "name": "Prism Catacombs",
+  "username": "OneHung",
+  "description": "Prism Catacombs\nRaymarched stone catacombs lit by rotating prism lamps; pytti-style vortex warps.\nViolet/rainbow phase drifts into a teal/gold vortex phase and back (~90s cycle).",
+  "tags": [
+   "raymarched",
+   "prism",
+   "vortex"
+  ],
+  "date": 1791337562,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/N3tSzH"
+  },
+  "stars": 3,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "gl-transition",
+ "kind": "transition",
+ "category": "transition",
+ "params": {
+  "center": [
+   0.5,
+   0.5
+  ],
+  "rotations": 1.0,
+  "scale": 8.0,
+  "backColor": [
+   0.15,
+   0.15,
+   0.15,
+   1.0
+  ]
+ },
+ "info": {
+  "id": "rotate-scale-fade",
+  "name": "Rotate Scale Fade",
+  "username": "Fernando Kuteken",
+  "description": "gl-transition. Status: Fully Working.",
+  "tags": [
+   "transition"
+  ],
+  "license": "MIT",
+  "source": {
+   "kind": "gl-transitions",
+   "file": "Transitions/Rotate_scale_fade.glsl"
+  },
+  "stars": 5,
+  "audio": {
+   "reactive": false
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [],
+   "codeFile": "transition.glsl"
+  }
+ ]
+}

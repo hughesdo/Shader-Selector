@@ -1,0 +1,74 @@
+{
+ "schema": "shaderlib/1",
+ "dialect": "shadertoy",
+ "kind": "standalone",
+ "category": "audio-reactive",
+ "info": {
+  "id": "N3y3Dw",
+  "name": "Eye Of The Opal [Reactive]",
+  "username": "PAEz",
+  "description": "Deepseek set the audio reactive sensitivity and initial effects, i made the initial visual and tweaked the result.\nDeepseek analyzed the track with shaders in ST ;P  Think it did a pretty good job.\nThe analysis happened near the last half of the track, ",
+  "tags": [
+   "ai"
+  ],
+  "date": 1790445724,
+  "source": {
+   "kind": "shadertoy",
+   "url": "https://www.shadertoy.com/view/N3y3Dw"
+  },
+  "stars": 2,
+  "audio": {
+   "reactive": true
+  },
+  "preview": {
+   "thumb": "thumb.webp",
+   "still": "still.webp"
+  }
+ },
+ "renderpass": [
+  {
+   "type": "buffer",
+   "name": "Buffer A",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "music",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     }
+    },
+    {
+     "channel": 1,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "id": "A",
+   "codeFile": "bufferA.glsl"
+  },
+  {
+   "type": "image",
+   "name": "Image",
+   "inputs": [
+    {
+     "channel": 0,
+     "type": "buffer",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": false
+     },
+     "ref": "A"
+    }
+   ],
+   "codeFile": "image.glsl"
+  }
+ ]
+}

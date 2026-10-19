@@ -1,0 +1,44 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "kishimisu-dtj3zw",
+    "name": "kishimisu-Dtj3z W",
+    "username": "kishimisu",
+    "description": "Audio-reactive city bar visualization by kishimisu. Frequency bins map to bar heights per cell, volume controls camera distance and color intensity. Pink/green/purple palette with logistic amplitude shaping.",
+    "tags": [
+      "audio-reactive"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "kishimisu-Dtj3zW.glsl",
+      "url": "https://www.shadertoy.com/view/Dtj3zW"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

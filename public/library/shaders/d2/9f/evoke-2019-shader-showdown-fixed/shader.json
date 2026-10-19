@@ -1,0 +1,32 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "evoke-2019-shader-showdown-fixed",
+    "name": "EVOKE 2019 Shader Showdown",
+    "username": "evvvvil",
+    "description": "Complex fractal tunnel scene from EVOKE 2019. This shader is static with no audio reactivity, featuring intricate raymarched geometry and volumetric clouds.",
+    "tags": [],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "EVOKE 2019 Shader Showdown_Fixed.glsl",
+      "url": "https://www.shadertoy.com/view/wtSXDw"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": false
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": []
+    }
+  ]
+}

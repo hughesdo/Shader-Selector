@@ -1,0 +1,45 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "wfyczt",
+    "name": "Space Cave",
+    "username": "OneHung",
+    "description": "Space Cave - Audio-reactive breathing cave inspired by Blackle Mori. Created by OneHung. Features erosion, edge glow, breathing walls, fog, and rim lighting - all audio reactive. Shadertoy ID: wfyczt",
+    "tags": [
+      "audio-reactive"
+    ],
+    "date": 1765040624,
+    "source": {
+      "kind": "shadertoy",
+      "url": "https://www.shadertoy.com/view/wfyczt",
+      "file": "wfyczt_SpaceCave.glsl"
+    },
+    "stars": 5,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "shaderlib/1",
+  "dialect": "glsl-full",
+  "info": {
+    "id": "fragcord-ggc25z3w",
+    "name": "fragcord-ggc25z3w",
+    "username": "OneHung",
+    "description": "Layered disc glow with golden-ratio rotated particle layers. Audio reactivity: bass pumps glow intensity, mids shift the red-blue color gradient, highs sharpen ridge detail. Elegant ring structure.",
+    "tags": [
+      "audio-reactive"
+    ],
+    "source": {
+      "kind": "oneoffrender",
+      "file": "fragcord-ggc25z3w.glsl"
+    },
+    "stars": 4,
+    "audio": {
+      "reactive": true
+    },
+    "preview": {
+      "thumb": "thumb.webp",
+      "still": "still.webp"
+    }
+  },
+  "renderpass": [
+    {
+      "type": "image",
+      "name": "Image",
+      "codeFile": "image.glsl",
+      "inputs": [
+        {
+          "channel": 0,
+          "type": "music",
+          "sampler": {
+            "filter": "linear",
+            "wrap": "clamp",
+            "vflip": false
+          }
+        }
+      ]
+    }
+  ]
+}

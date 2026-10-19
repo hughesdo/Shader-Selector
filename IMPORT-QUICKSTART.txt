@@ -1,0 +1,127 @@
+SHADER SELECTOR - IMPORT QUICK START
+====================================
+
+Run every command from this folder (shader-selector-v2\v2).
+Use "py", not "python" - on this PC "python" opens the Microsoft Store.
+
+
+THE NORMAL LOOP (Shadertoy)
+---------------------------
+
+1. Start the app in one terminal (leave it running):
+
+     npm run dev                 (or double-click run.bat)
+
+2. In a second terminal, import a shader by its ID or URL:
+
+     py tools\import_shadertoy.py N3cXRB
+     py tools\import_shadertoy.py https://www.shadertoy.com/view/N3cXRB
+
+3. Render real preview art (imports start with a placeholder):
+
+     py tools\libtools.py previews
+
+4. Check it compiles and renders:
+
+     py tools\selftest.py
+
+5. Refresh the browser at http://localhost:5180 - the shader is in the carousel.
+
+
+FINDING THE ID
+--------------
+
+It's the last part of the Shadertoy URL:
+  https://www.shadertoy.com/view/N3cXRB   ->   N3cXRB
+
+Only shaders the author set to "Public + API" can be imported. If one fails
+with not-found, that's usually why.
+
+
+SHADERTOY IMPORTER OPTIONS
+--------------------------
+
+  --dry-run          fetch and report only, write nothing (try this first)
+  --category X       override the guessed category. X is one of:
+                       audio-reactive  generative  3d-scene
+                       cubemap  effect  transition
+  --stars N          your rating 1-5 (default comes from Shadertoy likes:
+                       100+ = 5, 25+ = 4, 5+ = 3, else 2)
+  --license "..."    record a licence string
+  -f ids.txt         import many: one ID or URL per line
+  --keep-going       don't stop on the first failure
+  --key KEY          API key (otherwise uses SHADERTOY_KEY, already set)
+
+Examples:
+
+  py tools\import_shadertoy.py N3cXRB --category 3d-scene --stars 4
+  py tools\import_shadertoy.py -f ids.txt --stars 3 --keep-going
+
+
+SEARCHING SHADERTOY IN BULK
+---------------------------
+
+  py tools\import_shadertoy.py --query audio --sort popular --num 25 --dry-run
+
+  --sort    name | love | popular | newest | hot   (default popular)
+  --num     how many results (default 25)
+  --from    skip this many, for the next page (e.g. --from 25)
+
+Always --dry-run a query first to see what you'd get, then run it again
+without --dry-run.
+
+
+CHANGED YOUR MIND?
+------------------
+
+Re-importing an ID you already have REPLACES it (no duplicates), and keeps
+any preview art already rendered. So to fix a category or rating, just run
+the import again with the new --category / --stars.
+
+
+OTHER IMPORTERS (need a OneOffRender folder on disk)
+----------------------------------------------------
+
+Transitions (gl-transitions):
+
+  py tools\import_transitions.py --src ..\OneOffRender --dry-run
+  py tools\import_transitions.py --src ..\OneOffRender               (Highly Desired + Fully Working)
+  py tools\import_transitions.py --src ..\OneOffRender --all         (everything not Broken)
+  py tools\import_transitions.py --src ..\OneOffRender --only Dreamy Luma
+
+OneOffRender shaders:
+
+  py tools\import_oneoffrender.py --src ..\OneOffRender --out public\library --count 60 --keep
+
+  !! WARNING: without --keep this WIPES the existing shader library first,
+  !! including anything you imported from Shadertoy. Always add --keep
+  !! unless you really want a clean rebuild.
+
+  Useful extras: --all (everything importable),
+                 --exclude tools\compile_failures.txt  (skip known-broken ones),
+                 --prefer tools\prefer.txt             (always include these)
+
+
+HOUSEKEEPING
+------------
+
+  py tools\libtools.py previews --all     re-render ALL preview art
+  py tools\libtools.py reindex            rebuild the index if the carousel
+                                          looks out of date
+  py tools\libtools.py add tools\originals\selector-demo-orbits
+                                          add a hand-made shader folder
+
+
+TROUBLESHOOTING
+---------------
+
+  "no API key"            SHADERTOY_KEY isn't set in that terminal. Open a
+                          new terminal, or: set SHADERTOY_KEY=yourkey
+  "curl_cffi is required" py -m pip install curl_cffi pillow
+  previews hang / fail    the dev server (step 1) must be running
+  shader fails selftest   see tools\selftest_results.json for the GLSL error
+  import succeeds but     refresh the browser; if still missing, run
+  not in carousel         py tools\libtools.py reindex
+
+Licence note: "Public + API" lets you fetch a shader, not republish it.
+Check the shader's own licence before sharing the code anywhere.

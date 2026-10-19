@@ -1,0 +1,17 @@
+{
+  "name": "shader-selector",
+  "version": "0.1.0",
+  "description": "Reusable coverflow shader selector with dwell-then-compile live preview and drag payloads.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^6.4.4"
+  },
+  "private": true,
+  "type": "module"
+}
